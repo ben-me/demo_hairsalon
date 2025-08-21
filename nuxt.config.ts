@@ -7,5 +7,5 @@ export default defineNuxtConfig({
   },
 
   modules: ["@nuxt/image", "@nuxt/test-utils", "@nuxt/ui", "@nuxt/eslint"],
+  css: ["~/assets/css/main.css"],
 });
-
