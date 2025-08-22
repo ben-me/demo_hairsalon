@@ -1,6 +1,6 @@
-# Nuxt Minimal Starter
+# Portfolio Project Nuxt/Vue
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A demo page for a fictional hair salon using Nuxt and Vue.js.
 
 ## Setup
 
