@@ -14,7 +14,7 @@ let mobile_nav_active = ref(false);
   <header
     class="flex justify-between items-center mt-4 mx-2.5 bg-[#8E8E8E]/25 px-4 py-2 rounded-md"
   >
-    <h1 class="text-white">Demo Hair</h1>
+    <h1 class="text-white font-lobster">Demo Hair</h1>
     <nav class="hidden md:inline-block font-semibold">
       <ul class="flex gap-8">
         <li v-for="link of LINKS">
