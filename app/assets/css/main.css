@@ -7,3 +7,14 @@
   --ui-primary: #a30606;
   --ui-secondary: #b3c3b1;
 }
+
+@theme {
+  --font-lobster: "Lobster", sans-serif;
+}
+
+@font-face {
+  font-family: "Lobster";
+  src: url("~/assets/LobsterTwo-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 400;
+}
