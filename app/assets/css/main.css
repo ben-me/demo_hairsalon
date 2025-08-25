@@ -8,10 +8,21 @@
   --ui-secondary: #b3c3b1;
 }
 
+body {
+  width: 100%;
+  max-width: 1980px;
+  margin-inline: auto;
+  position: relative;
+}
+
 @theme {
   --font-lobster: "Lobster", sans-serif;
   --font-noto: "Noto Sans", sans-serif;
   --font-nunito: "Nunito", sans-serif;
+}
+
+p {
+  font-family: "Noto Sans", sans-serif;
 }
 
 @font-face {
@@ -23,14 +34,15 @@
 
 @font-face {
   font-family: "Noto Sans";
-  src: url("~/assets/fonts/NotoSans-VariableFont_wdth,wght") format("truetype");
+  src: url("~/assets/fonts/NotoSans-VariableFont_wdth,wght.ttf")
+    format("truetype");
   font-style: normal;
   font-weight: 100 900;
 }
 
 @font-face {
   font-family: "Nunito";
-  src: url("~/assets/fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght")
+  src: url("~/assets/fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf")
     format("truetype");
   font-style: normal;
   font-weight: 200 900;

@@ -12,7 +12,7 @@ let mobile_nav_active = ref(false);
 
 <template>
   <header
-    class="flex w-9/10 left-0 right-0 mx-auto z-10 fixed justify-between items-center mt-4 bg-[#8E8E8E]/25 px-4 py-2 rounded-md"
+    class="flex w-9/10 left-0 right-0 mx-auto z-10 absolute justify-between items-center mt-4 bg-[#8E8E8E]/25 px-4 py-2 rounded-md"
   >
     <h1 class="text-white font-lobster text-2xl">Demo Hair</h1>
     <nav class="hidden md:inline-block font-semibold">
