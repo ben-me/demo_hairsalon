@@ -1,5 +1,5 @@
 <template>
-  <section class="max-w-[1440px] mx-auto relative">
+  <section class="mx-auto relative">
     <NuxtImg
       class="h-[525px] object-cover md:h-auto md:max-h-[950px] w-full"
       src="img/pablo_merchan_montes_o_sntavxbme_unsplash_2_1x.webp"
