@@ -10,11 +10,28 @@
 
 @theme {
   --font-lobster: "Lobster", sans-serif;
+  --font-noto: "Noto Sans", sans-serif;
+  --font-nunito: "Nunito", sans-serif;
 }
 
 @font-face {
   font-family: "Lobster";
-  src: url("~/assets/LobsterTwo-Italic.ttf") format("truetype");
+  src: url("~/assets/fonts/LobsterTwo-Italic.ttf") format("truetype");
   font-style: italic;
   font-weight: 400;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("~/assets/fonts/NotoSans-VariableFont_wdth,wght") format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("~/assets/fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght")
+    format("truetype");
+  font-style: normal;
+  font-weight: 200 900;
 }
