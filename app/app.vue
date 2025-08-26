@@ -3,5 +3,6 @@
   <main>
     <Hero />
     <Salon />
+    <Team />
   </main>
 </template>
