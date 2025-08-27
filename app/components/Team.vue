@@ -30,7 +30,7 @@ const MEMBERS = [
         kreativen Stylisten an.
       </p>
     </div>
-    <div ref="gallery" class="overflow-auto">
+    <div ref="gallery" class="overflow-auto py-1">
       <ul class="flex gap-5 md:flex-wrap w-max md:w-full">
         <li v-for="member in MEMBERS">
           <UCard
