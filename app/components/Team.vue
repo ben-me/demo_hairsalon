@@ -16,52 +16,6 @@ const MEMBERS = [
     image_url: "img/team/lena.webp",
   },
 ];
-
-const gallery = ref();
-const gallery_list = ref();
-
-onMounted(() => {
-  update_widths();
-  window.addEventListener("resize", update_widths);
-});
-
-onBeforeUnmount(() => {
-  window.removeEventListener("resize", update_widths);
-});
-
-let finger_start_x = 0;
-let gallery_position_at_start = ref(0);
-let current_gallery_position = ref(0);
-
-let gallery_list_width = ref(0);
-let gallery_width = ref(0);
-
-function update_widths() {
-  gallery_width.value = gallery.value.offsetWidth || 0;
-  gallery_list_width.value = gallery_list.value.offsetWidth || 0;
-}
-
-function start_finger_down(event: PointerEvent) {
-  finger_start_x = event.clientX;
-  gallery_position_at_start.value = current_gallery_position.value;
-}
-
-function horizontal_gallery_scroll(event: PointerEvent) {
-  const finger_move_x = event.clientX - finger_start_x;
-  let proposed_position = gallery_position_at_start.value + finger_move_x;
-
-  const max_scroll_right = 0;
-  const max_scroll_left = gallery_width.value - gallery_list_width.value;
-
-  if (proposed_position > max_scroll_right) {
-    proposed_position = max_scroll_right;
-  }
-  if (proposed_position < max_scroll_left) {
-    proposed_position = max_scroll_left;
-  }
-
-  current_gallery_position.value = proposed_position;
-}
 </script>
 
 <template>
@@ -75,17 +29,8 @@ function horizontal_gallery_scroll(event: PointerEvent) {
         kreativen Stylisten an.
       </p>
     </div>
-    <div
-      ref="gallery"
-      class="overflow-hidden touch-pan-y"
-      @pointerdown.prevent="start_finger_down"
-      @pointermove="horizontal_gallery_scroll"
-    >
-      <ul
-        ref="gallery_list"
-        class="flex gap-5 translate-x-[var(--translate-x)] w-max transition-none"
-        :style="{ '--translate-x': current_gallery_position + 'px' }"
-      >
+    <div ref="gallery" class="overflow-auto">
+      <ul class="flex gap-5 md:flex-wrap w-max md:w-full">
         <li v-for="member in MEMBERS">
           <UCard
             variant="solid"
