@@ -20,6 +20,7 @@ const MEMBERS = [
 
 <template>
   <section
+    id="team"
     class="px-6 py-10 flex flex-col lg:py-20 md:grid md:grid-cols-[35%_65%] gap-8"
   >
     <div>

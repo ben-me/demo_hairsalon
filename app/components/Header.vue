@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const LINKS = [
   { url: "/", label: "Home" },
-  { url: "#salon", label: "Team" },
+  { url: "#team", label: "Team" },
   { url: "#preise", label: "Preise" },
   { url: "#galerie", label: "Galerie" },
   { url: "#anfahrt", label: "Anfahrt" },
