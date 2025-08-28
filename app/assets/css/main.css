@@ -19,6 +19,7 @@ body {
   --font-lobster: "Lobster", sans-serif;
   --font-noto: "Noto Sans", sans-serif;
   --font-nunito: "Nunito", sans-serif;
+  --color-bg: var(--ui-bg);
 }
 
 p {

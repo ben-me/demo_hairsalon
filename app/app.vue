@@ -4,5 +4,6 @@
     <Hero />
     <Salon />
     <Team />
+    <Preise />
   </main>
 </template>

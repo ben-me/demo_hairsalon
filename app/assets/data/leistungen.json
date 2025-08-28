@@ -1,0 +1,78 @@
+{
+  "leistungen": {
+    "Damen": [
+      {
+        "name": "Haarschnitt",
+        "preis": 35.0
+      },
+      {
+        "name": "Waschen, Schneiden, Föhnen",
+        "preis": 50.0
+      },
+      {
+        "name": "Strähnchen (ansatz)",
+        "preis": 40.0
+      },
+      {
+        "name": "Strähnchen (ganze Haare)",
+        "preis": 70.0
+      },
+      {
+        "name": "Coloration (kurzes Haar)",
+        "preis": 55.0
+      },
+      {
+        "name": "Coloration (langes Haar)",
+        "preis": 80.0
+      },
+      {
+        "name": "Balayage",
+        "preis": 90.0
+      },
+      {
+        "name": "Hochsteckfrisur",
+        "preis": 60.0
+      },
+      {
+        "name": "Pflegebehandlung",
+        "preis": 25.0
+      }
+    ],
+    "Herren": [
+      {
+        "name": "Haarschnitt",
+        "preis": 25.0
+      },
+      {
+        "name": "Waschen & Schneiden",
+        "preis": 30.0
+      },
+      {
+        "name": "Maschinenschnitt",
+        "preis": 20.0
+      },
+      {
+        "name": "Bart trimmen",
+        "preis": 15.0
+      },
+      {
+        "name": "Farbe / Tönung",
+        "preis": 35.0
+      }
+    ],
+    "Kinder": [
+      {
+        "name": "Haarschnitt Kinder bis 6 Jahre",
+        "preis": 15.0
+      },
+      {
+        "name": "Haarschnitt Kinder 7-12 Jahre",
+        "preis": 20.0
+      },
+      {
+        "name": "Waschen & Schneiden Kinder",
+        "preis": 25.0
+      }
+    ]
+  }
+}
