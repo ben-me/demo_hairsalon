@@ -11,7 +11,7 @@ const MEMBERS = [
     image_url: "img/team/eric.webp",
   },
   {
-    name: "Sabrina",
+    name: "Lena",
     title: "Friseurmeisterin",
     image_url: "img/team/lena.webp",
   },
