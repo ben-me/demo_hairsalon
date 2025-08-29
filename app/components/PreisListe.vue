@@ -4,7 +4,7 @@ import type { haircut_group } from "./Preise.vue";
 const { selected_price_list, data, last_selected_list } = defineProps<{
   data: { name: string; preis: number }[];
   selected_price_list: haircut_group;
-  last_selected_list: haircut_group;
+  last_selected_list?: haircut_group;
 }>();
 
 const animations = computed(() => {
