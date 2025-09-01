@@ -16,7 +16,7 @@ function switchHaircutList(new_list: haircut_group) {
 <template>
   <section
     id="preise"
-    class="bg-[#993838] text-white px-6 py-10 flex flex-col lg:py-15 lg:px-20 gap-15"
+    class="bg-[#993838] h-[800px] md:h-[530px] lg:h-[630px] text-white px-6 py-10 flex flex-col lg:py-15 lg:px-20 lg:gap-15 gap-8"
   >
     <div class="grid gap-3">
       <h2 class="text-4xl text-center font-nunito">Preisliste</h2>
