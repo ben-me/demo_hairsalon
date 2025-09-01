@@ -5,5 +5,6 @@
     <Salon />
     <Team />
     <Preise />
+    <Galerie />
   </main>
 </template>
