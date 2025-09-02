@@ -6,5 +6,6 @@
     <Team />
     <Preise />
     <Galerie />
+    <Anfahrt />
   </main>
 </template>

@@ -6,6 +6,7 @@
   --ui-text: #0e0c0b;
   --ui-primary: #a30606;
   --ui-secondary: #b3c3b1;
+  --ui-accent: #99b0a2;
 }
 
 body {
@@ -20,6 +21,7 @@ body {
   --font-noto: "Noto Sans", sans-serif;
   --font-nunito: "Nunito", sans-serif;
   --color-bg: var(--ui-bg);
+  --color-accent: var(--ui-accent);
 }
 
 p {
