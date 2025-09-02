@@ -5,7 +5,6 @@ export default defineNuxtConfig({
   typescript: {
     typeCheck: true,
   },
-
   modules: ["@nuxt/image", "@nuxt/test-utils", "@nuxt/ui", "@nuxt/eslint"],
   css: ["~/assets/css/main.css"],
 });
