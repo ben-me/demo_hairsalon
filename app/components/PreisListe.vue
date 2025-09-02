@@ -34,7 +34,7 @@ const animations = computed(() => {
       leave-active-class="transition-transform duration-350 ease-in-out"
     >
       <ul
-        class="rounded-md h-[590px] md:h-[340px] bg-bg py-10 px-8 items-start content-start text-black grid grid-cols-1 md:grid-cols-2 gap-8"
+        class="bg-bg grid grid-cols-1 content-start items-start gap-8 rounded-md px-8 py-10 text-black md:grid-cols-2"
         :key="selected_price_list"
       >
         <li v-for="haircut in data" :key="haircut.name" class="self-start">
@@ -42,7 +42,7 @@ const animations = computed(() => {
             <p>{{ haircut.name }}</p>
             <p class="text-nowrap">{{ haircut.preis }} €</p>
           </div>
-          <hr class="border-gray-400/50 border-1" />
+          <hr class="border-1 border-gray-400/50" />
         </li>
       </ul>
     </Transition>

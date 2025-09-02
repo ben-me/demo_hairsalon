@@ -1,13 +1,13 @@
 <template>
-  <section class="mx-auto relative">
+  <section class="relative mx-auto">
     <NuxtImg
-      class="h-[525px] object-cover md:h-auto md:max-h-[950px] w-full"
+      class="h-[525px] w-full object-cover md:h-auto md:max-h-[950px]"
       src="img/pablo_merchan_montes_o_sntavxbme_unsplash_2_1x.webp"
     />
     <div
-      class="p-6 flex md:max-w-100 md:gap-8 md:bg-black/60 md:text-white md:rounded-md flex-col gap-4 md:absolute md:top-1/2 md:left-15 md:-translate-y-1/2"
+      class="flex flex-col gap-5 px-8 py-10 md:absolute md:top-1/2 md:left-15 md:max-w-100 md:-translate-y-1/2 md:rounded-md md:bg-black/60 md:text-white"
     >
-      <h2 class="text-5xl font-nunito">
+      <h2 class="font-nunito text-5xl">
         Dein Style.<br />
         Unser Können.
       </h2>
@@ -16,13 +16,13 @@
         perfekten Look jeden Tag.
       </p>
       <div class="flex gap-3">
-        <UButton size="xl" class="text-white self-stretch font-bold">
+        <UButton size="xl" class="self-stretch font-bold text-white">
           Jetzt anrufen
         </UButton>
         <UButton
           to="#preise"
           size="xl"
-          class="text-black hover:bg-secondary/70 bg-secondary ring-secondary font-semibold"
+          class="hover:bg-secondary/70 bg-secondary ring-secondary font-semibold text-black"
         >
           Unsere Preise
         </UButton>

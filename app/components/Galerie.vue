@@ -5,8 +5,6 @@ const modal_open = ref(false);
 const image_index = ref(0);
 
 function openModal(index: number) {
-  console.log(index);
-
   image_index.value = index;
   modal_open.value = true;
 }
@@ -26,7 +24,7 @@ function previousImage() {
 </script>
 
 <template>
-  <section class="flex flex-col gap-8 px-6 py-10 lg:gap-15 lg:px-20 lg:py-15">
+  <Section id="galerie">
     <h2 class="font-nunito text-4xl">Galerie</h2>
     <ul
       class="grid grid-cols-2 gap-8 lg:grid-cols-[repeat(auto-fill,minmax(min(250px,100%),1fr))]"
@@ -71,5 +69,5 @@ function previousImage() {
     <UButton class="self-center text-white" size="lg">
       Mehr Bilder laden
     </UButton>
-  </section>
+  </Section>
 </template>

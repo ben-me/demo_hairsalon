@@ -19,12 +19,9 @@ const MEMBERS = [
 </script>
 
 <template>
-  <section
-    id="team"
-    class="flex flex-col gap-3 px-6 py-10 md:grid md:grid-cols-[35%_1fr] lg:p-20"
-  >
+  <Section id="team" class="md:grid md:grid-cols-[35%_1fr]">
     <div>
-      <h2 class="font-nunito text-4xl">Das Team</h2>
+      <h2 class="font-nunito mb-2.5 text-4xl">Das Team</h2>
       <p>
         Vertraue deine Haare unserem Team von professionell ausgebildeten und
         kreativen Stylisten an.
@@ -54,5 +51,5 @@ const MEMBERS = [
         </li>
       </ul>
     </div>
-  </section>
+  </Section>
 </template>

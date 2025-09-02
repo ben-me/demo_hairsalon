@@ -15,9 +15,7 @@ const saarbruecken = [6.99619, 49.23265] as LngLatLike;
 </script>
 
 <template>
-  <section
-    class="bg-accent flex flex-col gap-6 px-6 py-10 md:flex-row-reverse lg:gap-15 lg:p-20"
-  >
+  <Section class="bg-accent md:flex-row-reverse" id="anfahrt">
     <div class="flex grow flex-col gap-6">
       <h2 class="font-nunito text-4xl">Anfahrt | Öffnungszeiten</h2>
       <p>
@@ -42,7 +40,7 @@ const saarbruecken = [6.99619, 49.23265] as LngLatLike;
         </tbody>
       </table>
     </div>
-    <div class="w-1/2">
+    <div class="w-full md:w-1/2">
       <MglMap
         map-style="https://tiles.openfreemap.org/styles/liberty"
         :zoom="12"
@@ -52,7 +50,7 @@ const saarbruecken = [6.99619, 49.23265] as LngLatLike;
         <mgl-navigation-control position="top-right" />
       </MglMap>
     </div>
-  </section>
+  </Section>
 </template>
 
 <style>

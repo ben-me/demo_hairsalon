@@ -14,6 +14,7 @@ body {
   max-width: 1980px;
   margin-inline: auto;
   position: relative;
+  font-family: "Noto Sans", sans-serif;
 }
 
 @theme {
