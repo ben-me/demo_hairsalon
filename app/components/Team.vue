@@ -21,7 +21,7 @@ const MEMBERS = [
 <template>
   <section
     id="team"
-    class="px-6 py-10 flex flex-col lg:py-20 md:grid md:grid-cols-[35%_65%] gap-8"
+    class="flex flex-col gap-3 px-6 py-10 md:grid md:grid-cols-[35%_1fr] lg:p-20"
   >
     <div>
       <h2 class="font-nunito text-4xl">Das Team</h2>
@@ -31,7 +31,9 @@ const MEMBERS = [
       </p>
     </div>
     <div ref="gallery" class="overflow-auto py-1">
-      <ul class="flex gap-5 md:flex-wrap w-max md:w-full">
+      <ul
+        class="flex w-max gap-5 md:grid md:w-full md:grid-cols-[repeat(auto-fill,minmax(min(100%,250px),1fr))]"
+      >
         <li v-for="member in MEMBERS">
           <UCard
             variant="solid"
@@ -40,7 +42,7 @@ const MEMBERS = [
             :ui="{ body: 'p-0 sm:p-0' }"
           >
             <NuxtImg
-              class="w-[250px] h-[310px] object-cover"
+              class="h-[310px] w-full object-cover"
               :src="member.image_url"
               :alt="`Picture of ${member.name}`"
             />
