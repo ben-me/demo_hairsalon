@@ -14,10 +14,7 @@ function switchHaircutList(new_list: haircut_group) {
 </script>
 
 <template>
-  <Section
-    id="preise"
-    class="bg-[#993838] text-white md:h-[530px] lg:h-[630px]"
-  >
+  <Section id="preise" class="bg-[#993838] text-white">
     <div class="grid gap-3">
       <h2 class="font-nunito text-center text-4xl">Preisliste</h2>
       <menu class="mx-auto flex w-max justify-between gap-15">
