@@ -9,17 +9,17 @@ const LINKS = [
 </script>
 <template>
   <footer class="bg-text text-white">
-    <Section class="md:flex-row md:justify-between">
-      <div class="flex flex-col md:gap-6">
+    <Section class="sm:flex-row sm:justify-between">
+      <div class="flex flex-col gap-2 sm:gap-6">
         <h2 class="font-lobster text-4xl">Demo Hair</h2>
         <UButton
-          class="inline-block self-start text-white"
+          class="inline-block self-start text-nowrap text-white"
           href="tel:+491234567890"
         >
           Jetzt anrufen
         </UButton>
       </div>
-      <div class="flex flex-col gap-2 md:gap-6">
+      <div class="flex flex-col gap-2 sm:gap-6">
         <div>
           <h3 class="underline">Unsere Adresse:</h3>
           <address class="text-white/80">
@@ -42,7 +42,7 @@ const LINKS = [
         </div>
       </div>
       <nav aria-label="Footer navigation links">
-        <ul class="flex flex-col gap-1 md:gap-6">
+        <ul class="flex flex-col gap-1 sm:gap-6">
           <li v-for="link in LINKS">
             <a :href="link.url">
               {{ link.label }}
@@ -51,7 +51,7 @@ const LINKS = [
         </ul>
       </nav>
 
-      <div class="gap flex flex-col gap-1 md:justify-between">
+      <div class="gap flex flex-col gap-1 sm:justify-between">
         <div class="flex flex-col">
           <a href="/">Impressum</a>
           <a href="/">Datenschutzerklärung</a>
