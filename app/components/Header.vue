@@ -12,10 +12,13 @@ let mobile_nav_active = ref(false);
 
 <template>
   <header
-    class="flex w-9/10 left-0 right-0 mx-auto z-10 absolute justify-between items-center mt-4 bg-[#8E8E8E]/25 px-4 py-2 rounded-md"
+    class="absolute right-0 left-0 z-10 mx-auto mt-4 flex w-9/10 items-center justify-between rounded-md bg-[#8E8E8E]/25 px-4 py-2"
   >
-    <h1 class="text-white font-lobster text-2xl">Demo Hair</h1>
-    <nav class="hidden md:inline-block font-semibold">
+    <h1 class="font-lobster text-2xl text-white">Demo Hair</h1>
+    <nav
+      aria-label="Header navigation"
+      class="hidden font-semibold md:inline-block"
+    >
       <ul class="flex gap-8">
         <li v-for="link of LINKS">
           <ULink
@@ -28,7 +31,7 @@ let mobile_nav_active = ref(false);
         </li>
       </ul>
     </nav>
-    <UButton class="hidden md:inline-block text-white font-bold"
+    <UButton class="hidden font-bold text-white md:inline-block"
       >Termin buchen</UButton
     >
     <button
@@ -42,7 +45,7 @@ let mobile_nav_active = ref(false);
     <div
       v-if="mobile_nav_active"
       @click="mobile_nav_active = false"
-      class="fixed bg-black/20 md:hidden inset-0 w-full h-full"
+      class="fixed inset-0 h-full w-full bg-black/20 md:hidden"
     ></div>
 
     <Transition
@@ -55,10 +58,10 @@ let mobile_nav_active = ref(false);
     >
       <nav
         v-if="mobile_nav_active"
-        class="fixed bg-secondary h-full w-9/10 top-0 right-0 font-semibold text-3xl"
+        class="bg-secondary fixed top-0 right-0 h-full w-9/10 text-3xl font-semibold"
       >
-        <ul class="flex flex-col gap-8 items-center w-full">
-          <li class="self-end pt-6 px-8.5">
+        <ul class="flex w-full flex-col items-center gap-8">
+          <li class="self-end px-8.5 pt-6">
             <button @click="mobile_nav_active = false">
               <Icon name="uil:times" class="size-10" />
             </button>

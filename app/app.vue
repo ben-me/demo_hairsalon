@@ -8,4 +8,5 @@
     <Galerie />
     <Anfahrt />
   </main>
+  <Footer />
 </template>

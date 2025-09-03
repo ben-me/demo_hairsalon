@@ -23,6 +23,7 @@ body {
   --font-nunito: "Nunito", sans-serif;
   --color-bg: var(--ui-bg);
   --color-accent: var(--ui-accent);
+  --color-text: var(--ui-text);
 }
 
 p {
