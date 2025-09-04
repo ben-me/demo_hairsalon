@@ -6,5 +6,11 @@ export default defineNuxtConfig({
   },
   modules: ["@nuxt/image", "@nuxt/test-utils", "@nuxt/ui", "@nuxt/eslint"],
   css: ["~/assets/css/main.css"],
+  nitro: {
+    preset: "cloudflare_module",
+    cloudflare: {
+      deployConfig: true,
+      nodeCompat: true,
+    },
+  },
 });
-
