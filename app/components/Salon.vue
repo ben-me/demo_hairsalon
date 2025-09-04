@@ -3,7 +3,12 @@
     <div class="grid gap-8 md:grid-cols-[35%_1fr] md:gap-15">
       <NuxtImg
         src="img/salon.webp"
+        height="4096"
+        width="2731"
         class="max-h-[400px] w-full self-start rounded-lg object-cover"
+        densities="1x 2x"
+        alt="Bild des Salons"
+        sizes="xs:100vw, sm:100vw, md:100vw, lg:100vw, xl:100vw, 2xl:100vw"
       />
       <div class="flex flex-col gap-1">
         <h2 class="font-nunito text-4xl">Unser Salon</h2>

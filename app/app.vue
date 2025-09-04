@@ -10,3 +10,7 @@
   </main>
   <Footer />
 </template>
+
+<style lang="css">
+@import "~/assets/css/main.css";
+</style>

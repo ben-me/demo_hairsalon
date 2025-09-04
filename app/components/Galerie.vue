@@ -32,8 +32,12 @@ function previousImage() {
       <li v-for="(image, index) in data" class="w-full lg:max-w-[350px]">
         <NuxtImg
           class="aspect-square w-full rounded-md object-cover transition-all hover:scale-105"
-          :src="image"
+          :src="image.url"
+          :width="image.width"
+          :height="image.height"
           alt=""
+          densities="1x 2x"
+          sizes="xs:100vw, sm:100vw, md:100vw, lg:100vw, xl:100vw, 2xl:100vw"
           @click="openModal(index)"
         />
       </li>
