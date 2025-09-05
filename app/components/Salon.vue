@@ -9,6 +9,7 @@
         densities="1x 2x"
         alt="Bild des Salons"
         sizes="xs:100vw, sm:100vw, md:100vw, lg:100vw, xl:100vw, 2xl:100vw"
+        loading="lazy"
       />
       <div class="flex flex-col gap-1">
         <h2 class="font-nunito text-4xl">Unser Salon</h2>

@@ -45,6 +45,7 @@ const MEMBERS = [
             :ui="{ body: 'p-0 sm:p-0' }"
           >
             <NuxtImg
+              loading="lazy"
               :height="member.height"
               :width="member.width"
               densities="1x 2x"

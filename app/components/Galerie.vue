@@ -35,6 +35,7 @@ function previousImage() {
           :src="image.url"
           :width="image.width"
           :height="image.height"
+          loading="lazy"
           alt=""
           densities="1x 2x"
           sizes="xs:100vw, sm:100vw, md:100vw, lg:100vw, xl:100vw, 2xl:100vw"
