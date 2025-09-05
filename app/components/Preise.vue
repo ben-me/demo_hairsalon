@@ -17,7 +17,7 @@ function switchHaircutList(new_list: haircut_group) {
   <Section id="preise" class="bg-[#993838] text-white">
     <div class="grid gap-3">
       <h2 class="font-nunito text-center text-4xl">Preisliste</h2>
-      <menu class="mx-auto flex w-max justify-between gap-15">
+      <menu class="mx-auto flex w-full max-w-60 justify-between">
         <li v-for="category in categories" :key="category">
           <button
             @click="switchHaircutList(category)"
