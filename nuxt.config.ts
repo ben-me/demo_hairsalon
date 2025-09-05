@@ -12,7 +12,11 @@ export default defineNuxtConfig({
     "@nuxt/ui",
     "@nuxt/eslint",
     "nuxt-vitalizer",
+    "@nuxt/fonts",
   ],
+  fonts: {
+    provider: "local",
+  },
   telemetry: false,
   nitro: {
     preset: "cloudflare_module",
