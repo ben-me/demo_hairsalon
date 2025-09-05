@@ -3,21 +3,21 @@ const MEMBERS = [
   {
     name: "Sabrina",
     title: "Friseurmeisterin",
-    image_url: "img/team/sabrina.webp",
+    image_url: "/img/team/sabrina.webp",
     width: 3257,
     height: 4096,
   },
   {
     name: "Eric",
     title: "Friseurmeister",
-    image_url: "img/team/eric.webp",
+    image_url: "/img/team/eric.webp",
     width: 3073,
     height: 4096,
   },
   {
     name: "Lena",
     title: "Friseurmeisterin",
-    image_url: "img/team/lena.webp",
+    image_url: "/img/team/lena.webp",
     width: 3074,
     height: 4096,
   },
@@ -48,7 +48,6 @@ const MEMBERS = [
               loading="lazy"
               :height="member.height"
               :width="member.width"
-              densities="1x 2x"
               sizes="xs:100vw, sm:100vw, md:100vw, lg:100vw, xl:100vw, 2xl:100vw"
               class="h-[310px] w-full object-cover"
               :src="member.image_url"
