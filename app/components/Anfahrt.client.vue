@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { MglMap, MglNavigationControl } from "@indoorequal/vue-maplibre-gl";
 import type { LngLatLike } from "maplibre-gl";
+import "maplibre-gl/dist/maplibre-gl.css";
 
 const opening_times = [
   { day: "Montag", timeframe: "09:00 - 17:00" },
@@ -52,7 +53,3 @@ const saarbruecken = [6.99619, 49.23265] as LngLatLike;
     </div>
   </Section>
 </template>
-
-<style>
-@import "maplibre-gl/dist/maplibre-gl.css";
-</style>

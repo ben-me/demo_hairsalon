@@ -1,4 +1,8 @@
+<script>
+import "~/assets/css/main.css";
+</script>
 <template>
+  <NuxtRouteAnnouncer />
   <Header />
   <main>
     <Hero />
@@ -10,7 +14,3 @@
   </main>
   <Footer />
 </template>
-
-<style lang="css">
-@import "~/assets/css/main.css";
-</style>
