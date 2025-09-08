@@ -35,10 +35,9 @@ function previousImage() {
           :src="image.url"
           :width="image.width"
           :height="image.height"
-          loading="lazy"
           alt=""
-          sizes="xs:100vw, sm:100vw, md:100vw, lg:100vw, xl:100vw, xxl:100vw"
           @click="openModal(index)"
+          sizes="xs:50vw sm:50vw md:50vw lg:100vw xl:100vw 2xl:100vw 3xl:100vw 4xl:100vw"
         />
       </li>
     </ul>
@@ -58,8 +57,11 @@ function previousImage() {
 
         <NuxtImg
           :src="data?.[image_index]?.url"
-          @click="modal_open = false"
+          :width="data?.[image_index]?.width"
+          :height="data?.[image_index]?.height"
           alt=""
+          @click="modal_open = false"
+          sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw 2xl:100vw 3xl:100vw 4xl:100vw"
         />
 
         <button

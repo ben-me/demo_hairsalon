@@ -45,10 +45,9 @@ const MEMBERS = [
             :ui="{ body: 'p-0 sm:p-0' }"
           >
             <NuxtImg
-              loading="lazy"
               :height="member.height"
               :width="member.width"
-              sizes="xs:100vw, sm:100vw, md:100vw, lg:100vw, xl:100vw, 2xl:100vw"
+              sizes="xs:250px sm:250px md:250px lg:250px xl:250px 2xl:250px 3xl:250px 4xl:250px"
               class="h-[310px] w-full object-cover"
               :src="member.image_url"
               :alt="`Ein Foto von ${member.name}`"

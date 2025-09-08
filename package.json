@@ -8,7 +8,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "cdev": "nuxt build && pnpm dlx wrangler dev"
+    "cdev": "nuxt build && pnpm dlx wrangler dev",
+    "cdep": "nuxt build && pnpm dlx wrangler deploy"
   },
   "dependencies": {
     "@indoorequal/vue-maplibre-gl": "^8.4.2",
