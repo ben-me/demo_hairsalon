@@ -34,17 +34,6 @@ export default defineNuxtConfig({
     provider: "local",
   },
   telemetry: false,
-  nitro: {
-    preset: "cloudflare_module",
-    cloudflare: {
-      deployConfig: true,
-      nodeCompat: true,
-    },
-    prerender: {
-      routes: ["/public"],
-      crawlLinks: true,
-    },
-  },
   vitalizer: {
     disableStylesheets: "entry",
   },
