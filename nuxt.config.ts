@@ -37,6 +37,13 @@ export default defineNuxtConfig({
   vitalizer: {
     disableStylesheets: "entry",
   },
+  nitro: {
+    preset: "cloudflare_module",
+    cloudflare: {
+      deployConfig: true,
+      nodeCompat: true,
+    },
+  },
   vite: { plugins: [tailwindcss()] },
   app: {
     head: {
