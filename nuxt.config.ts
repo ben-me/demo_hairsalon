@@ -43,6 +43,10 @@ export default defineNuxtConfig({
       deployConfig: true,
       nodeCompat: true,
     },
+    prerender: {
+      crawlLinks: true,
+      routes: ["/"],
+    },
   },
   vite: { plugins: [tailwindcss()] },
   app: {

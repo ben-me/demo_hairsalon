@@ -7,7 +7,7 @@
         width="1920"
         class="max-h-[400px] w-full self-start rounded-lg object-cover"
         alt="Bild vom inneren des Friseursalons. Eine Friseurin trocknet die Haare einer Kundin mit einem Föhn."
-        sizes="xxs:100vw xs:100vw sm:100vw md:400px lg:400px xl:400px 2xl:400px 3xl:400px 4xl:400px"
+        sizes="xxs:100vw xs:100vw sm:100vw md:100vw lg:100vw xl:100vw 2xl:100vw 3xl:100vw 4xl:100vw"
       />
       <div class="flex flex-col gap-1">
         <h2 class="font-nunito text-4xl">Unser Salon</h2>
