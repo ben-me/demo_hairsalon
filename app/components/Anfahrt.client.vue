@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { MglMap, MglNavigationControl } from "@indoorequal/vue-maplibre-gl";
 import type { LngLatLike } from "maplibre-gl";
-import "maplibre-gl/dist/maplibre-gl.css";
 
 const opening_times = [
   { day: "Montag", timeframe: "09:00 - 17:00" },
