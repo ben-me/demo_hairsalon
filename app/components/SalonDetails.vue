@@ -1,5 +1,5 @@
 <template>
-  <Section>
+  <PageSection>
     <div class="grid gap-8 md:grid-cols-[35%_1fr] md:gap-15">
       <NuxtImg
         src="/img/salon.webp"
@@ -26,5 +26,5 @@
         </p>
       </div>
     </div>
-  </Section>
+  </PageSection>
 </template>

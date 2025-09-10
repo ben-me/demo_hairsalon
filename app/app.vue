@@ -6,7 +6,7 @@ register();
 </script>
 <template>
   <NuxtRouteAnnouncer />
-  <Header />
+  <SalonHeader />
   <main>
     <SalonHero />
     <SalonDetails />
@@ -15,5 +15,5 @@ register();
     <SalonGalerie />
     <SalonAnfahrt />
   </main>
-  <Footer />
+  <SalonFooter />
 </template>

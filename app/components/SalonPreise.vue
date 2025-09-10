@@ -9,7 +9,7 @@ const selected_price_list = ref<haircut_group>("Damen");
 </script>
 
 <template>
-  <Section id="preise" class="bg-[#993838] text-white">
+  <PageSection id="preise" class="bg-[#993838] text-white">
     <div class="grid gap-3">
       <h2 class="font-nunito text-center text-4xl">Preisliste</h2>
       <menu class="mx-auto flex w-full max-w-60 justify-between">
@@ -50,5 +50,5 @@ const selected_price_list = ref<haircut_group>("Damen");
         </ul>
       </swiper-slide>
     </swiper-container>
-  </Section>
+  </PageSection>
 </template>

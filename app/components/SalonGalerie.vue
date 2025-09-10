@@ -24,7 +24,7 @@ function previousImage() {
 </script>
 
 <template>
-  <Section id="galerie">
+  <PageSection id="galerie">
     <h2 class="font-nunito text-4xl">Galerie</h2>
     <ul
       class="grid grid-cols-2 gap-8 lg:grid-cols-[repeat(auto-fill,minmax(min(250px,100%),1fr))]"
@@ -79,5 +79,5 @@ function previousImage() {
     <UButton class="self-center text-white" size="lg">
       Mehr Bilder laden
     </UButton>
-  </Section>
+  </PageSection>
 </template>

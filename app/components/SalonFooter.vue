@@ -9,7 +9,7 @@ const LINKS = [
 </script>
 <template>
   <footer class="bg-text text-white">
-    <Section class="sm:flex-row sm:justify-between">
+    <PageSection class="sm:flex-row sm:justify-between">
       <div class="flex flex-col gap-2 sm:gap-6">
         <h2 class="font-lobster text-4xl">Demo Hair</h2>
         <UButton
@@ -63,6 +63,6 @@ const LINKS = [
           <Icon name="uil:instagram" />
         </div>
       </div>
-    </Section>
+    </PageSection>
   </footer>
 </template>

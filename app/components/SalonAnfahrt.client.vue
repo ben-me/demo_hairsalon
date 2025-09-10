@@ -15,7 +15,7 @@ const saarbruecken = [6.99619, 49.23265] as LngLatLike;
 </script>
 
 <template>
-  <Section id="anfahrt" class="bg-accent md:flex-row-reverse">
+  <PageSection id="anfahrt" class="bg-accent md:flex-row-reverse">
     <div class="flex grow flex-col gap-6">
       <h2 class="font-nunito text-4xl">Anfahrt | Öffnungszeiten</h2>
       <p>
@@ -51,5 +51,5 @@ const saarbruecken = [6.99619, 49.23265] as LngLatLike;
         <mgl-navigation-control position="top-right" />
       </MglMap>
     </div>
-  </Section>
+  </PageSection>
 </template>
