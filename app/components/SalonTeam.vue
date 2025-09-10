@@ -37,7 +37,7 @@ const MEMBERS = [
       <ul
         class="flex w-max gap-5 md:grid md:w-full md:grid-cols-[repeat(auto-fill,minmax(min(100%,250px),1fr))]"
       >
-        <li v-for="member in MEMBERS">
+        <li v-for="member in MEMBERS" :key="member.image_url">
           <UCard
             variant="solid"
             as="article"

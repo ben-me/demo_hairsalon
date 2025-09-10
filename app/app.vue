@@ -1,16 +1,19 @@
 <script>
 import "~/assets/css/main.css";
+import { register } from "swiper/element/bundle";
+
+register();
 </script>
 <template>
   <NuxtRouteAnnouncer />
   <Header />
   <main>
-    <Hero />
-    <Salon />
-    <Team />
-    <Preise />
-    <Galerie />
-    <Anfahrt />
+    <SalonHero />
+    <SalonDetails />
+    <SalonTeam />
+    <SalonPreise />
+    <SalonGalerie />
+    <SalonAnfahrt />
   </main>
   <Footer />
 </template>

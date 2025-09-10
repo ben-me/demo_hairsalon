@@ -15,7 +15,7 @@ const saarbruecken = [6.99619, 49.23265] as LngLatLike;
 </script>
 
 <template>
-  <Section class="bg-accent md:flex-row-reverse" id="anfahrt">
+  <Section id="anfahrt" class="bg-accent md:flex-row-reverse">
     <div class="flex grow flex-col gap-6">
       <h2 class="font-nunito text-4xl">Anfahrt | Öffnungszeiten</h2>
       <p>
@@ -32,6 +32,7 @@ const saarbruecken = [6.99619, 49.23265] as LngLatLike;
         <tbody>
           <tr
             v-for="opening_time in opening_times"
+            :key="opening_time.day"
             class="flex justify-between"
           >
             <th scope="row">{{ opening_time.day }}:</th>

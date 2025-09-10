@@ -7,7 +7,7 @@ const LINKS = [
   { url: "#anfahrt", label: "Anfahrt" },
 ];
 
-let mobile_nav_active = ref(false);
+const mobile_nav_active = ref(false);
 </script>
 
 <template>
@@ -20,7 +20,7 @@ let mobile_nav_active = ref(false);
       class="hidden font-semibold md:inline-block"
     >
       <ul class="flex gap-8">
-        <li v-for="link of LINKS">
+        <li v-for="link of LINKS" :key="link.url">
           <ULink
             class="text-white"
             :to="link.url"
@@ -36,17 +36,17 @@ let mobile_nav_active = ref(false);
     >
     <button
       class="flex items-center md:hidden"
-      @click="mobile_nav_active = true"
       aria-label="Open mobile navigation"
+      @click="mobile_nav_active = true"
     >
       <Icon name="quill:hamburger" class="size-10 text-white" />
     </button>
 
     <div
       v-if="mobile_nav_active"
-      @click="mobile_nav_active = false"
       class="fixed inset-0 h-full w-full bg-black/20 md:hidden"
-    ></div>
+      @click="mobile_nav_active = false"
+    />
 
     <Transition
       enter-active-class="transition-[translate] duration-200 absolute ease-in"
@@ -66,7 +66,7 @@ let mobile_nav_active = ref(false);
               <Icon name="uil:times" class="size-10" />
             </button>
           </li>
-          <li v-for="link of LINKS">
+          <li v-for="link of LINKS" :key="link.url">
             <a :href="link.url" @click="mobile_nav_active = false">
               {{ link.label }}
             </a>

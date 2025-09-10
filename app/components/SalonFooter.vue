@@ -43,7 +43,7 @@ const LINKS = [
       </div>
       <nav aria-label="Footer navigation links">
         <ul class="flex flex-col gap-1 sm:gap-6">
-          <li v-for="link in LINKS">
+          <li v-for="link in LINKS" :key="link.url">
             <a :href="link.url">
               {{ link.label }}
             </a>
