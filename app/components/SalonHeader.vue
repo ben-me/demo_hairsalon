@@ -8,6 +8,19 @@ const LINKS = [
 ];
 
 const mobile_nav_active = ref(false);
+const mobile_nav = useTemplateRef("mobile-nav");
+
+watch(mobile_nav_active, (active) => {
+  document.body.classList.toggle("overflow-hidden", active);
+
+  const main = document.querySelector("main");
+  if (main) {
+    main.toggleAttribute("inert", active);
+    main.toggleAttribute("aria-hidden", active);
+  }
+});
+
+useTrapFocus(mobile_nav, () => (mobile_nav_active.value = false));
 </script>
 
 <template>
@@ -58,6 +71,9 @@ const mobile_nav_active = ref(false);
     >
       <nav
         v-if="mobile_nav_active"
+        ref="mobile-nav"
+        aria-modal="true"
+        aria-label="Mobile Navigationsleiste"
         class="bg-secondary fixed top-0 right-0 h-full w-9/10 text-3xl font-semibold"
       >
         <ul class="flex w-full flex-col items-center gap-8">
