@@ -76,7 +76,7 @@ function previousImage() {
         </button>
       </template>
     </UModal>
-    <UButton class="self-center text-white" size="lg">
+    <UButton disabled class="self-center text-white" size="lg">
       Mehr Bilder laden
     </UButton>
   </PageSection>
