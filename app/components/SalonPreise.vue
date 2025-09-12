@@ -5,10 +5,17 @@ type haircut_group = "Damen" | "Herren" | "Kinder";
 
 const [emblaRef, emblaApi] = emblaCarouselVue();
 const categories = Object.keys(data.leistungen) as haircut_group[];
-const selected_price_list = ref<haircut_group>("Damen");
+const selected_price_list = ref(0);
 
-function selectPriceList(index: number, category: haircut_group) {
-  selected_price_list.value = category;
+onMounted(() => {
+  if (emblaApi.value)
+    emblaApi.value.on("select", (emblaApi) =>
+      selectPriceList(emblaApi.selectedScrollSnap()),
+    );
+});
+
+function selectPriceList(index: number) {
+  selected_price_list.value = index;
   emblaApi.value?.scrollTo(index, false);
 }
 </script>
@@ -21,10 +28,9 @@ function selectPriceList(index: number, category: haircut_group) {
         <li v-for="(category, index) in categories" :key="category">
           <button
             :class="[
-              selected_price_list === category &&
-                'underline underline-offset-2',
+              selected_price_list === index && 'underline underline-offset-2',
             ]"
-            @click="selectPriceList(index, category)"
+            @click="selectPriceList(index)"
           >
             {{ category }}
           </button>
