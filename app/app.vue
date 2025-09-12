@@ -4,7 +4,7 @@ import "~/assets/css/main.css";
 <template>
   <NuxtRouteAnnouncer />
   <SalonHeader />
-  <main>
+  <main id="main">
     <SalonHero />
     <SalonDetails />
     <SalonTeam />

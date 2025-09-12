@@ -29,6 +29,7 @@ function selectPriceList(index: number) {
         <li v-for="(category, index) in categories" :key="category">
           <button
             :aria-selected="selected_price_list === index"
+            :aria-label="`Preise für ${selected_price_list === 0 ? 'Damen' : selected_price_list === 1 ? 'Herren' : 'Kinder'}`"
             :class="[
               selected_price_list === index && 'underline underline-offset-2',
             ]"

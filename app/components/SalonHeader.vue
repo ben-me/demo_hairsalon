@@ -24,6 +24,12 @@ useTrapFocus(mobile_nav, () => (mobile_nav_active.value = false));
 </script>
 
 <template>
+  <ULink
+    to="#main"
+    aria-label="Zum Inhalt springen"
+    class="sr-only z-50 text-black focus:not-sr-only focus:px-2"
+    >Zum Inhalt springen</ULink
+  >
   <header
     class="absolute right-0 left-0 z-10 mx-auto mt-4 flex w-9/10 items-center justify-between rounded-md bg-[#8E8E8E]/25 px-4 py-2"
   >
