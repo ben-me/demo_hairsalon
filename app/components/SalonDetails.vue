@@ -5,7 +5,7 @@
         src="/img/salon.webp"
         height="2880"
         width="1920"
-        class="max-h-[400px] w-full self-start rounded-lg object-cover"
+        class="row-start-2 max-h-[400px] w-full self-start rounded-lg object-cover md:row-start-1"
         alt="Bild vom inneren des Friseursalons. Eine Friseurin trocknet die Haare einer Kundin mit einem Föhn."
         sizes="xxs:100vw xs:100vw sm:100vw md:100vw lg:100vw xl:100vw 2xl:100vw 3xl:100vw 4xl:100vw"
       />
