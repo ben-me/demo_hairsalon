@@ -9,9 +9,9 @@
         alt="Bild vom inneren des Friseursalons. Eine Friseurin trocknet die Haare einer Kundin mit einem Föhn."
         sizes="xxs:100vw xs:100vw sm:100vw md:100vw lg:100vw xl:100vw 2xl:100vw 3xl:100vw 4xl:100vw"
       />
-      <div class="flex flex-col gap-1">
+      <div class="flex flex-col gap-4">
         <h2 class="font-nunito text-4xl">Unser Salon</h2>
-        <p>
+        <p class="opacity-75">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua. At vero eos et accusam et justo duo dolores et ea

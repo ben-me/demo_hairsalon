@@ -28,7 +28,7 @@ const MEMBERS = [
   <PageSection id="team" class="md:grid md:grid-cols-[35%_1fr]">
     <div>
       <h2 class="font-nunito mb-2.5 text-4xl">Das Team</h2>
-      <p>
+      <p class="opacity-75">
         Vertraue deine Haare unserem Team von professionell ausgebildeten und
         kreativen Stylisten an.
       </p>

@@ -18,7 +18,7 @@ const saarbruecken = [6.99619, 49.23265] as LngLatLike;
   <PageSection id="anfahrt" class="bg-accent md:flex-row-reverse">
     <div class="flex grow flex-col gap-6">
       <h2 class="font-nunito text-4xl">Anfahrt | Öffnungszeiten</h2>
-      <p>
+      <p class="opacity-75">
         Wir sind von Montag bis Samstag für dich da und freuen uns auf deinen
         Besuch!
       </p>

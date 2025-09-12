@@ -21,7 +21,7 @@ const breakpoints = [320, 640, 768, 1024, 1280, 1536, 1920, 2048];
       alt=""
     />
     <div
-      class="flex flex-col gap-5 px-8 py-10 md:absolute md:top-1/2 md:left-15 md:max-w-100 md:-translate-y-1/2 md:rounded-md md:bg-black/60 md:text-white"
+      class="flex flex-col gap-5 px-6 py-10 md:absolute md:top-1/2 md:left-15 md:max-w-100 md:-translate-y-1/2 md:rounded-md md:bg-black/60 md:text-white"
     >
       <h2 class="font-nunito text-5xl">
         Dein Style.<br />
