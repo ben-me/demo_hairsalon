@@ -55,6 +55,29 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "de",
       },
+      link: [
+        {
+          rel: "apple-touch-icon",
+          sizes: "180x180",
+          href: "/apple-touch-icon.png",
+        },
+        {
+          rel: "icon",
+          sizes: "32x32",
+          type: "image/png",
+          href: "/favicon-32x32.png",
+        },
+        {
+          rel: "icon",
+          sizes: "16x16",
+          type: "image/png",
+          href: "/favicon-16x16.png",
+        },
+        {
+          rel: "manifest",
+          href: "/site.webmanifest",
+        },
+      ],
     },
   },
 });
