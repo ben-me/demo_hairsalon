@@ -22,7 +22,7 @@
     "embla-carousel-auto-height": "^8.6.0",
     "embla-carousel-vue": "^8.6.0",
     "maplibre-gl": "^5.7.1",
-    "nuxt": "^4.1.0",
+    "nuxt": "^4.1.2",
     "nuxt-vitalizer": "1.0.0",
     "tailwindcss": "^4.1.13",
     "vue": "^3.5.21",
